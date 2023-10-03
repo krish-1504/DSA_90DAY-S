@@ -1,0 +1,11 @@
+i/p = 0->10->20->30->NULL
+o/p = NULL<- 0 <- 10 <- 20 <- 30 
+
+
+
+# sol 1 : 
+Three Pointer - curr,prev,forward
+# sol 2 :
+Using Recursion Of Three Pointer
+# sol 3 :
+Using Recursion Of Only Head
