@@ -4,29 +4,30 @@ public:
         if(head == NULL || head->next == NULL){
             return head;
         }
-        ListNode* temp = head;
-        ListNode* temp1 = head;
-        bool flag = false;
-        map<int,int> dup;
-        while(temp1 !=NULL){
-            dup[temp1->val]++;
-            
-            temp1 = temp1->next;
+        ListNode* curr = head;
+        ListNode* prev = NULL;
+        ListNode* temp  =head;
+
+        map<int,int> mp;
+        while(temp!=NULL){
+            mp[temp->val]++;
+            temp = temp -> next;
         }
-        while(temp->next!=NULL){
-            if(dup[temp->next->val]>1){
-                temp->next = temp ->next->next;
+
+
+        while(curr !=NULL){
+            if(mp[curr->val]>1){
+                if(prev!=NULL){
+                    prev -> next = curr -> next;
+                }
+                else{
+                    head = head -> next;
+                }
+                curr = curr -> next;
             }
             else{
-                temp = temp->next;
-            }
-        }
-        while(true){
-            if(head == NULL || dup[head->val]<=1){
-                break;
-            }
-            else{
-                head = head->next;
+                prev = curr;
+                curr = curr -> next;
             }
         }
         return head;
