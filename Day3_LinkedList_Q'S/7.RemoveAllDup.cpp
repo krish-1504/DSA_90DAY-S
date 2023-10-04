@@ -14,7 +14,6 @@ public:
             temp = temp -> next;
         }
 
-
         while(curr !=NULL){
             if(mp[curr->val]>1){
                 if(prev!=NULL){
