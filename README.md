@@ -5,3 +5,5 @@ So Started With Linked List
 CountDown Started 
 Day 1 / 91 : Done Types Of Linked List(Circular,Singly,Doubly) From Scratch With Theory And Code ( Take 3:10 Min ).
 Day 2 / 91 : Done LL Q'S (4) (Take 4:10). 
+Day 3 / 91 : Done LL Q'S (4) (Take 4:00). 
+Day 4 / 91 : Done LL Q'S (43) (Take 2:30). 
