@@ -24,3 +24,4 @@ void sortStack(stack<int> &st)
 	solve(st);
 }
 
+c
