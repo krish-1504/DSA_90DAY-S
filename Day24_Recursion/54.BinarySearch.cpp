@@ -3,7 +3,7 @@ using namespace std;
 
 
 int binarys(int arr[],int l,int h,int key){
-    while(l<h){
+    while(h>=l){
         int mid = l+(h-l)/2;
         if(arr[mid] == key){
             return mid;
