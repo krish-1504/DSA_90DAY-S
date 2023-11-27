@@ -1,12 +1,27 @@
-#include <bits/stdc++.h>
-#define ll long long
+#include <iostream>
 using namespace std;
 
-int main() {
-    ll t;
-    cin>>t;
-    while(t--){
-        
+
+void solve() {
+  int n;
+  cin >> n;
+  vector<long long> vi(n);
+  for(auto &x : vi) cin >> x;
+  long long ans = 0;
+  ans += vi[0]-1;
+  for(int i = 1 ; i < n ; i++) {
+    if(vi[i] > vi[i-1]) {
+      ans += vi[i] - vi[i-1];
     }
-    return 0;
+  }
+  cout<<ans<<"\n";
+}
+
+int main() {
+  int t;
+  cin >> t;
+  while(t--) {
+    solve();
+  }
+  return 0;
 }
